@@ -1,0 +1,181 @@
+
+.header {
+  position: relative;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-span {
+  color: #2e2f42;
+}
+
+.burguer-button{
+  padding: 16px 0;
+  background-color: transparent;
+}
+
+.burguer-icon{
+  fill: #2f2f37;
+  width: 24px;
+  height: 24px;
+}
+
+.mobil-menu{
+  display: none;
+}
+
+.mobil-close-button{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 24px;
+ right: 24px;
+ display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+fill: #2e2f42;
+border-radius: 50%;
+border: 1px solid #e7e9fc;
+background-color: transparent;
+
+}
+
+
+
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: #2e2f42;
+}
+.header-menu-item{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.header-menu-item:hover,
+.header-menu-item:focus {
+  color: #404bbf;
+
+}
+
+
+.mobil-social-list{
+  display: flex;
+  gap: 40px;
+}
+
+
+.header-menu-title {
+  display: block;
+  padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu-title:hover,
+.header-menu-title:focus {
+  color: #404bbf;
+}
+
+/* 
+.header-menu-item:nth-child(1) .header-menu-title::after {
+  position: absolute;
+  display: block;
+  content: "";
+  border-radius: 2px;
+  bottom: -1px;
+  width: 48px;
+  height: 4px;
+  background: #404bbf;
+}
+
+.header-menu-item:nth-child(1) .header-menu-title {
+  position: relative;
+  color: #404bbf;
+} */
+
+
+
+.mobil-adres-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #434455;
+  font-style: normal;
+   
+}
+
+.header-contac:hover,
+.header-contac:focus {
+  color: #404bbf;
+}
+.mobil-adres-item{
+  margin-bottom: 48px;
+}
+.mobil-social-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-contact{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+.mobil-menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background-color: #fff;
+padding: 72px 16px 40px 16px;
+}
+  
+}
+@media screen and (min-width: 768px)  {
+  .mobil-social-list{
+    display: none;
+  }
+  .burguer-wrapper{
+    display: none;
+  }
+}
+@media screen and (min-width: 1158px)  {
+  .mobil-social-list{
+    display: none;
+  }
+
+  .burguer-wrapper{
+    display: none;
+  }
+}
+
+
+
+
+
