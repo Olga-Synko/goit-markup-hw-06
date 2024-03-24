@@ -579,6 +579,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .footer-logo-div {
@@ -629,8 +630,8 @@ body {
 
 .footer-icon {
   fill: #f4f4fd;
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .footer-subscribe {
@@ -655,7 +656,7 @@ body {
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   opacity: 0.3;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-label-button {
@@ -704,6 +705,39 @@ body {
   color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-wraper {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    padding-left: 108px;
+  }
+  .footer-logo-div {
+    text-align: start;
+  }
+  .footer-social-title {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-form {
+    flex-direction: row;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .footer-wraper {
+    align-items: baseline;
+  }
+  .footer-logo-div {
+    text-align: start;
+    margin-right: 120px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+}
 .backdrop {
   overflow: hidden;
   position: fixed;
