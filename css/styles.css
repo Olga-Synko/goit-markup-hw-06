@@ -146,9 +146,9 @@ body {
 
 .container {
   max-width: 320px;
-  padding-top: 96px;
+  /*  padding-top: 96px; */
   padding-right: 16px;
-  padding-bottom: 96px;
+  /* padding-bottom: 96px */
   padding-left: 16px;
   margin-left: auto;
   margin-right: auto;
@@ -339,7 +339,7 @@ body {
   line-height: 1.07;
   padding-top: 188px;
   padding-bottom: 188px;
-  background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/webp/people_office_1x.webp);
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
@@ -422,6 +422,7 @@ body {
 }
 .team {
   background-color: #f4f4fd;
+  padding-top: 96px;
 }
 
 .team-title {
@@ -490,6 +491,10 @@ body {
     width: calc((100% - 24px) / 2);
   }
 }
+.portfolio {
+  padding-top: 96px;
+}
+
 .portfolio-title {
   margin-bottom: 72px;
   text-align: center;
@@ -571,15 +576,17 @@ body {
 }
 .footer {
   background-color: #2e2f42;
+  padding: 96px 0;
 }
 
 .footer-wraper {
-  padding-bottom: 96px;
-  padding-top: 96px;
+  /* padding-bottom: 96px;
+  padding-top: 96px; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
+  gap: 72px;
 }
 
 .footer-logo-div {
@@ -599,7 +606,9 @@ body {
   width: 288px;
   font-weight: 400;
   color: #f4f4fd;
-  margin-bottom: 72px;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  /*  margin-bottom: 72px; */
 }
 
 .footer-social-title {
@@ -620,7 +629,7 @@ body {
 .footer-social {
   display: flex;
   flex-direction: column;
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
 }
 
 .footer-icon-link:hover,
@@ -638,7 +647,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   justify-content: center;
 }
 
@@ -679,6 +688,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 72px;
 }
 
 .footer-label-icon {
@@ -708,10 +718,8 @@ body {
 @media screen and (min-width: 768px) {
   .footer-wraper {
     flex-direction: row;
-    justify-content: space-between;
     text-align: start;
-    -moz-column-gap: 24px;
-         column-gap: 24px;
+    gap: 72px 24px;
     padding-left: 108px;
   }
   .footer-logo-div {
@@ -730,12 +738,13 @@ body {
 @media screen and (min-width: 1158px) {
   .footer-wraper {
     align-items: baseline;
+    padding-left: 15px;
+  }
+  .footer-text {
+    margin-right: 120px;
   }
   .footer-logo-div {
     text-align: start;
-    margin-right: 120px;
-    -moz-column-gap: 0;
-         column-gap: 0;
   }
 }
 .backdrop {
@@ -960,6 +969,9 @@ body {
 }
 
 .form-link-privacy {
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
   color: #4d5ae5;
 }
 
