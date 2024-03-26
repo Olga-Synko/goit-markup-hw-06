@@ -140,14 +140,14 @@
 }
 @media screen and (min-width: 768px) {
   .header-logo {
-    padding-right: 120px;
+    margin-right: 120px;
   }
   
   }
   .mobil-menu{
     display: flex;
     align-items: center;
-    gap: 120px;
+    justify-content: center;
   }
   .mobil-close-button{
     display: none;
@@ -155,7 +155,7 @@
   .header-menu{
     display: flex;
     flex-direction: row;
-  
+    gap: 40px;
     
   }
   .header-menu-item{
@@ -172,8 +172,9 @@
     display: block;
   }
   .header-contact{
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     font-weight: 400;
     font-size: 12px;
     line-height: 117%;

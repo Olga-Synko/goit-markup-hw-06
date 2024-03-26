@@ -162,9 +162,9 @@ body {
 @media (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding-top: 120px;
+    /*  padding-top: 120px; */
     padding-right: 15px;
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
     padding-left: 15px;
   }
 }
@@ -307,13 +307,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header-logo {
-    padding-right: 120px;
+    margin-right: 120px;
   }
 }
 .mobil-menu {
   display: flex;
   align-items: center;
-  gap: 120px;
+  justify-content: center;
 }
 
 .mobil-close-button {
@@ -323,6 +323,7 @@ body {
 .header-menu {
   display: flex;
   flex-direction: row;
+  gap: 40px;
 }
 
 .header-menu-item {
@@ -341,8 +342,9 @@ body {
 }
 
 .header-contact {
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   font-weight: 400;
   font-size: 12px;
   line-height: 117%;
