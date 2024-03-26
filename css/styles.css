@@ -307,13 +307,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header-logo {
-    margin-right: 120px;
+    padding-right: 120px;
   }
 }
 .mobil-menu {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 120px;
 }
 
 .mobil-close-button {
@@ -323,7 +323,6 @@ body {
 .header-menu {
   display: flex;
   flex-direction: row;
-  gap: 40px;
 }
 
 .header-menu-item {
@@ -337,14 +336,9 @@ body {
   letter-spacing: 0.02em;
 }
 
-.mobil-adres-item {
-  display: block;
-}
-
 .header-contact {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  justify-content: center;
+  align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 117%;
