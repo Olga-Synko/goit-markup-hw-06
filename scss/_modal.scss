@@ -215,21 +215,10 @@
   }
   .form-sendbutton {
     margin: 0 auto;
-    border-radius: 4px;
     padding: 16px 32px;
     min-width: 169px;
     height: 56px;
-    color: #fff;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: #4d5ae5;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-    letter-spacing: 0.04em;
-    line-height: 1.5;
-    font-weight: 500;
-    display: block;
+    
   }
-  .form-sendbutton:hover,
-  .form-sendbutton:focus {
-    background-color: #404bbf;
-  }
+  

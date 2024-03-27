@@ -2,6 +2,7 @@
   background-color: #2e2f42;
   padding: 96px 0;
 }
+
 .footer-wraper {
   /* padding-bottom: 96px;
   padding-top: 96px; */
@@ -11,9 +12,11 @@
   text-align: center;
   gap: 72px;
 }
+
 .footer-logo-div {
   text-align: center;
 }
+
 .footer-logo {
   margin-bottom: 16px;
 }
@@ -28,8 +31,9 @@
   font-weight: 400;
   color: #f4f4fd;
   column-gap: unset;
- /*  margin-bottom: 72px; */
+  /*  margin-bottom: 72px; */
 }
+
 .footer-social-title {
   text-align: center;
   color: #fff;
@@ -44,10 +48,17 @@
   justify-content: center;
   gap: 16px;
 }
+
 .footer-social {
   display: flex;
   flex-direction: column;
   /* margin-bottom: 72px; */
+}
+
+.footer-icon-link {
+  width: 24px;
+  height: 24px;
+  color: #fff;
 }
 
 .footer-icon-link:hover,
@@ -59,14 +70,18 @@
   fill: #f4f4fd;
   width: 24px;
   height: 24px;
+  margin-left: 16px;
 }
+
 .footer-subscribe {
   display: flex;
   flex-direction: column;
   text-align: center;
   /* margin-bottom: 16px; */
   justify-content: center;
+
 }
+
 .footer-form {
   display: flex;
   flex-direction: column;
@@ -89,22 +104,19 @@
   justify-content: center;
   align-items: center;
   padding: 0 24px;
-  color: #fff;
-  background-color: #4d5ae5;
-  border-radius: 4px;
   max-width: 165px;
   height: 40px;
-  cursor: pointer;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
+  margin-left: 10px;
+
 }
+
 .button-wraper {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 72px;
 }
+
 .footer-label-icon {
   fill: #ffffff;
   width: 24px;
@@ -120,41 +132,50 @@
   letter-spacing: 0.04em;
   font-weight: 500;
 }
+
 .footer-input::placeholder {
   color: #fff;
 }
 
 @media screen and (min-width: 768px) {
-  .footer-wraper{
+  .footer-wraper {
     flex-direction: row;
     text-align: start;
-   gap: 72px 24px;
+    gap: 72px 24px;
     padding-left: 108px;
   }
+
   .footer-logo-div {
     text-align: start;
   }
-  .footer-social-title{
+
+  .footer-social-title {
     display: flex;
     flex-direction: row;
   }
+
   .footer-form {
-   flex-direction: row;
-   column-gap: 24px;
+    flex-direction: row;
+    column-gap: 24px;
   }
 }
+
 @media screen and (min-width: 1158px) {
+
   .footer-wraper {
-    align-items: baseline;
+    align-content: baseline;
+    align-items: center;
+    justify-content: space-between;
     padding-left: 15px;
+    gap: 0px;
   }
-  .footer-text{
-    margin-right: 120px;
-  }
+
   .footer-logo-div {
+    margin-left: 120px;
     text-align: start;
   }
-  
-  
-  
+
+  .footer-input {
+    opacity: unset;
+  }
 }
