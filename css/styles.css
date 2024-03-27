@@ -646,8 +646,6 @@ body {
 }
 
 .footer-wraper {
-  /* padding-bottom: 96px;
-  padding-top: 96px; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -674,7 +672,6 @@ body {
   color: #f4f4fd;
   -moz-column-gap: unset;
        column-gap: unset;
-  /*  margin-bottom: 72px; */
 }
 
 .footer-social-title {
@@ -695,7 +692,6 @@ body {
 .footer-social {
   display: flex;
   flex-direction: column;
-  /* margin-bottom: 72px; */
 }
 
 .footer-icon-link {
@@ -720,7 +716,6 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* margin-bottom: 16px; */
   justify-content: center;
 }
 

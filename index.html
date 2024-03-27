@@ -29,12 +29,12 @@
         <a href="./index.html" class="header-logo logotip"
           >Web<span class="logo-span">Studio</span></a
         >
-       <div class="mobil-menu is-burger-open">
-        <button class="mobil-close-button" type="button">
-          <svg class="close-icon" width="8" height="8">
-            <use href="./images/icons.svg#close-icon"></use>
-          </svg>
-        </button>
+        <div class="mobil-menu is-burger-open">
+          <button class="mobil-close-button" type="button">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#close-icon"></use>
+            </svg>
+          </button>
           <nav class="header-nav">
             <ul class="header-menu">
               <li class="header-menu-item">
@@ -48,63 +48,59 @@
               </li>
             </ul>
           </nav>
-  
-         
-            <address class="mobil-adres-item">
-              <ul class="header-contacts">
-                <li>
-                  <a href="tel:+110001111111" class="header-contact"
-                    >+11 (000) 111-11-11</a
-                  >
-                </li>
-                <li>
-                  <a href="mailto:info@devstudio.com" class="header-contact"
-                    >info@devstudio.com</a
-                  >
-                </li>
-              </ul>
-            </address>
-            <ul class="mobil-social-list">
-              <li class="mobil-icon-item">
-                <a href="" class="mobil-icon-link social-icon">
-                  <svg class="mobil-icon" width="24" height="24">
-                    <use href="./images/icons.svg#instagram-icon"></use>
-                  </svg>
-                </a>
+
+          <address class="mobil-adres-item">
+            <ul class="header-contacts">
+              <li>
+                <a href="tel:+110001111111" class="header-contact"
+                  >+11 (000) 111-11-11</a
+                >
               </li>
-              <li class="mobil-icon-item">
-                <a href="" class="mobil-icon-link social-icon">
-                  <svg class="mobil-icon" width="24" height="24">
-                    <use href="./images/icons.svg#twitter-icon"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mobil-icon-item">
-                <a href="" class="mobil-icon-link social-icon">
-                  <svg class="mobil-icon" width="24" height="24">
-                    <use href="./images/icons.svg#facebook-icon"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mobil-icon-item">
-                <a href="" class="mobil-icon-link social-icon">
-                  <svg class="mobil-icon" width="24" height="24">
-                    <use href="./images/icons.svg#linkedin-icon"></use>
-                  </svg>
-                </a>
+              <li>
+                <a href="mailto:info@devstudio.com" class="header-contact"
+                  >info@devstudio.com</a
+                >
               </li>
             </ul>
-          </div>
-       
-     
+          </address>
+          <ul class="mobil-social-list">
+            <li class="mobil-icon-item">
+              <a href="" class="mobil-icon-link social-icon">
+                <svg class="mobil-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobil-icon-item">
+              <a href="" class="mobil-icon-link social-icon">
+                <svg class="mobil-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobil-icon-item">
+              <a href="" class="mobil-icon-link social-icon">
+                <svg class="mobil-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobil-icon-item">
+              <a href="" class="mobil-icon-link social-icon">
+                <svg class="mobil-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <button class="burguer-button" type="button">
-          <svg class="burguer-icon"   width="24" height="24">
+          <svg class="burguer-icon" width="24" height="24">
             <use href="./images/icons.svg#burger-icon"></use>
           </svg>
         </button>
-     
-    </div>
-   
+      </div>
     </header>
 
     <main>
@@ -113,7 +109,9 @@
           <h1 class="hero-title titleh1">
             Effective Solutions for Your Business
           </h1>
-          <button class="hero-button button-base" type="button">Order Service</button>
+          <button class="hero-button button-base" type="button">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -185,16 +183,22 @@
           <h2 class="team-title titleh2">Our Team</h2>
           <ul class="team-cards-list">
             <li class="team-card">
-              <img
-                class="team-card-img"
-                srcset="
-                  ./images/webp/guerrero_1x.webp 1x,
-                  ./images/webp/guerrero_2x.webp 2x
-                "
-                alt="personal-images"
-                width="264"
-                height="260"
-              />
+              <picture class="team-card-img">
+                <source
+                  srcset="
+                    ./images/webp/guerrero_1x.webp 1x,
+                    ./images/webp/guerrero_2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team-card-img"
+                  src="./images/img-desinger.jpg"
+                  alt="personal-images"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="team-card-description">
                 <h3 class="team-card-name titleh3">Mark Guerrero</h3>
                 <p class="team-card-text">Product Designer</p>
@@ -231,16 +235,22 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                class="team-card-img"
-                srcset="
-                  ./images/webp/ford_1x.webp 1x,
-                  ./images/webp/ford_2x.webp 2x
-                "
-                alt="personal-images"
-                width="264"
-                height="260"
-              />
+              <picture class="team-card-img">
+                <source
+                  srcset="
+                    ./images/webp/ford_1x.webp 1x,
+                    ./images/webp/ford_2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team-card-img"
+                  src="./images/img-developer.jpg"
+                  alt="personal-images"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="team-card-description">
                 <h3 class="team-card-name titleh3">Tom Ford</h3>
                 <p class="team-card-text">Frontend Developer</p>
@@ -277,16 +287,22 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                class="team-card-img"
-                srcset="
-                  ./images/webp/garcia_1x.webp 1x,
-                  ./images/webp/garcia_2x.webp 2x
-                "
-                alt="personal-images"
-                width="264"
-                height="260"
-              />
+              <picture class="team-card-img">
+                <source
+                  srcset="
+                    ./images/webp/garcia_1x.webp 1x,
+                    ./images/webp/garcia_2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team-card-img"
+                  src="./images/img-marketing.jpg"
+                  alt="personal-images"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="team-card-description">
                 <h3 class="team-card-name titleh3">Camila Garcia</h3>
                 <p class="team-card-text">Marketing</p>
@@ -323,16 +339,22 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                class="team-card-img"
-                srcset="
-                  ./images/webp/wilson_1x.webp 1x,
-                  ./images/webp/wilson_2x.webp 2x
-                "
-                alt="personal-images"
-                width="264"
-                height="260"
-              />
+              <picture class="team-card-img">
+                <source
+                  srcset="
+                    ./images/webp/wilson_1x.webp 1x,
+                    ./images/webp/wilson_2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team-card-img"
+                  src="./images/img-uidesinger.jpg"
+                  alt="personal-images"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="team-card-description">
                 <h3 class="team-card-name titleh3">Daniel Wilson</h3>
                 <p class="team-card-text">UI Designer</p>
@@ -377,14 +399,23 @@
           <ul class="portfolio-cards-list">
             <li class="portfolio-card-list">
               <div class="portfolio-card-imgoverlay">
-                <img
-                  class="portfolio-card-img"
-                  srcset="./images/webp/bankia_1x.webp 1x,
-                  ./images/webp/bankia_1x.webp 2x"
-                  alt="App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/webp/bankia_1x.webp 1x,
+                      ./images/webp/bankia_1x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="team-card-img"
+                    src="./images/baking-portf.jpg"
+                    alt="personal-images"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+
                 <p class="portfolio-card-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -398,16 +429,23 @@
             </li>
             <li class="portfolio-card-list">
               <div class="portfolio-card-imgoverlay">
-                <img
-                  class="portfolio-card-img"
-                  srcset="
-                    ./images/webp/payment_1x.webp 1x,
-                    ./images/webp/payment_2x.webp 2x
-                  "
-                  alt="Cashless Payment"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/webp/payment_1x.webp 1x,
+                      ./images/webp/payment_2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="team-card-img"
+                    src="./images/payment-portf.jpg"
+                    alt="personal-images"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+
                 <p class="portfolio-card-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -422,14 +460,23 @@
 
             <li class="portfolio-card-list">
               <div class="portfolio-card-imgoverlay">
-                <img
-                  class="portfolio-card-img"
-                  srcset="./images/webp/meditation_1x.webp 1x,
-                  ./images/webp/meditation_2x.webp 2x"
-                  alt="Meditation App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/webp/meditation_1x.webp 1x,
+                      ./images/webp/meditation_2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="team-card-img"
+                    src="./images/meditation-portf.jpg"
+                    alt="personal-images"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+
                 <p class="portfolio-card-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -444,14 +491,23 @@
 
             <li class="portfolio-card-list">
               <div class="portfolio-card-imgoverlay">
-                <img
-                  class="portfolio-card-img"
-                  srcset="./images/webp/sevice_1x.webp 1x,
-                  ./images/webp/service_2x.webp 2x"
-                  alt="Taki Service"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/webp/sevice_1x.webp  1x,
+                      ./images/webp/service_2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="team-card-img"
+                    src="./images/service-portf.jpg"
+                    alt="personal-images"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+
                 <p class="portfolio-card-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -465,14 +521,22 @@
             </li>
             <li class="portfolio-card-list">
               <div class="portfolio-card-imgoverlay">
-                <img
-                  class="portfolio-card-img"
-                  srcset="./images/webp/illustrations_1x.webp 1x,
-                  ./images/webp/Illustrations_2x.webp 2x"
-                  alt="Screen Illustrations"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/webp/illustrations_1x.webp 1x,
+                      ./images/webp/illustrations_2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="team-card-img"
+                    src="./images/screen-portf.jpg"
+                    alt="personal-images"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="portfolio-card-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -488,14 +552,22 @@
             </li>
             <li class="portfolio-card-list">
               <div class="portfolio-card-imgoverlay">
-                <img
-                  class="portfolio-card-img"
-                  srcset="./images/webp/courses_1x.webp 1x,
-                  ./images/webp/courses_2x.webp 2x"
-                  alt="Online Courses"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/webp/courses_1x.webp 1x,
+                      ./images/webp/courses_2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="team-card-img"
+                    src="./images/course-portf.jpg"
+                    alt="personal-images"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="portfolio-card-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -651,7 +723,9 @@
               <a class="form-link-privacy" href="#">Privacy Policy</a></label
             >
           </div>
-          <button class="form-sendbutton button-base" type="submit">Send</button>
+          <button class="form-sendbutton button-base" type="submit">
+            Send
+          </button>
         </form>
       </div>
     </div>
