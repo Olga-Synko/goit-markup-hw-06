@@ -105,6 +105,42 @@
 
     <main>
       <section class="hero">
+        <picture class="hero-image">
+          <source
+            srcset="
+              ./images/webp/dark_bg-mob_1x.webp 1x,
+              ./images/webp/dark_bg-mob_2x.webp 2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/people-office-mob1x.jpg 1x,
+              ./images/people-office-mob2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./images/webp/people_office_1x.webp 1x,
+              ./images/webp/people_office_2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/people-office-1x.jpg 1x,
+              ./images/people-office-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+            type="image/jpeg"
+          />
+          <img src="./images/hero-people-office.jpg" alt="Main images" />
+        </picture>
+
         <div class="container">
           <h1 class="hero-title titleh1">
             Effective Solutions for Your Business

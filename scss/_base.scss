@@ -12,7 +12,6 @@ body {
 @media screen and (min-width: 1158px) {
   body {
     font-weight: 400;
-
   }
 }
 
@@ -23,6 +22,7 @@ body {
   color: #fff;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .titleh2 {
@@ -132,10 +132,7 @@ body {
 
 .container {
   max-width: 320px;
-  /*  padding-top: 96px; */
   padding-right: 16px;
-  /* padding-bottom: 96px */
-  ;
   padding-left: 16px;
   margin-left: auto;
   margin-right: auto;
@@ -150,9 +147,7 @@ body {
 @media (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    /*  padding-top: 120px; */
     padding-right: 15px;
-    /* padding-bottom: 120px; */
     padding-left: 15px;
   }
 }
